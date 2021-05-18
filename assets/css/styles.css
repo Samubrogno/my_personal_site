@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #5995DA;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+nav{
+    background-color: aqua; border: 1px solid #fff; /* debugging */
+    width: 80%;
+    padding: 20px 0;
+    display:flex;
+    justify-content: space-around;
+
+}
+.menu > li{
+    display:inline;
+    border:1px solid #fff;
+    margin-right: 50px;
+}
+.menu > li:last-of-type{
+    margin-right: 0;
+}
