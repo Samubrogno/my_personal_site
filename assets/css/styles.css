@@ -5,24 +5,23 @@
     
 }
 header{
-    background-color: rgb(0, 0, 201);
+    background-color: #0d1d41;
     display: flex;
     justify-content: center;
     height: 50px;
 }
 nav{
-    background-color: aqua; border: 1px solid #fff; /* debugging */
     width: 80%;
     padding: 20px 0;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
 
 }
 .menu > li{
-    color: orange;
+    color: #f1811d;
     display:inline;
-    border:1px solid #fff;
     margin-right: 50px;
+    text-transform: uppercase;
 }
 .menu > li:last-of-type{
     margin-right: 0;
@@ -40,4 +39,14 @@ body{
 h1{
     text-align: center;
     text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    color: #f1811d;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: #f3a158;
 }
