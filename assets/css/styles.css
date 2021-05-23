@@ -31,6 +31,7 @@ body{
     background-color:#EEEEEE;
 }
 .page{
+    display:flex;
     margin: 0 auto;
     width: 90%;
     border:1px solid red;
@@ -49,4 +50,9 @@ a:hover{
 }
 a:visited{
     color: #f3a158;
+}
+@media only screen and (max-width: 400px) {
+    nav{
+        width: 100%;
+    }
 }
