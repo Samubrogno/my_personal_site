@@ -8,20 +8,28 @@ header{
     background-color: #0d1d41;
     display: flex;
     justify-content: center;
-    height: 50px;
+    height: 70px;
 }
 nav{
     width: 80%;
     padding: 20px 0;
     display:flex;
     justify-content: center;
+    align-items: center;
 
+}
+.menu{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .menu > li{
     color: #f1811d;
     display:inline;
     margin-right: 50px;
     text-transform: uppercase;
+    
 }
 .menu > li:last-of-type{
     margin-right: 0;
@@ -34,12 +42,24 @@ body{
     display:flex;
     margin: 0 auto;
     width: 90%;
-    border:1px solid red;
+    height: 100%;
+    border:1px solid red; /* debugging */
     justify-content: center;
 }
+.profile-img{
+    width: 10px;
+    height: 10px;
+}
 h1{
+    display: flex;
     text-align: center;
     text-transform: uppercase;
+    border:1px solid rgb(208, 255, 0); /* debugging */
+}
+article{
+    display: flex;
+    text-align: start;
+    border:1px solid rgb(0, 4, 255); /* debugging */
 }
 a{
     text-decoration: none;
@@ -51,8 +71,17 @@ a:hover{
 a:visited{
     color: #f3a158;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) { /* Mobile */
     nav{
         width: 100%;
     }
+    .menu > li, .menu > li:last-of-type{
+        margin: 0, auto;
+    }
+}
+@media only screen and (min-width:401px) and (max-width:960px){ /* Tablet */
+
+}
+@media only screen and (min-width:961px){ /* Desktop */
+
 }
