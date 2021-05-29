@@ -53,13 +53,16 @@ body{
 h1{
     display: flex;
     text-align: center;
+    justify-content: center;
     text-transform: uppercase;
+    width: 100%;
     border:1px solid rgb(208, 255, 0); /* debugging */
 }
 article{
     display: flex;
     text-align: start;
     border:1px solid rgb(0, 4, 255); /* debugging */
+    
 }
 a{
     text-decoration: none;
