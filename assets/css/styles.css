@@ -40,15 +40,20 @@ body{
 }
 .page{
     display:flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 90%;
     height: 100%;
     border:1px solid red; /* debugging */
     justify-content: center;
 }
+aside{
+    display: flex;
+    justify-content: center;
+}
 .profile-img{
-    width: 10px;
-    height: 10px;
+    width: 30%;
+    height: 30%;
 }
 h1{
     display: flex;
