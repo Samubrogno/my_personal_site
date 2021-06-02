@@ -40,7 +40,7 @@ body{
 }
 .page{
     display:flex;
-    
+    flex-direction: column;
     margin: 0 auto;
     width: 90%;
     height: 100%;
@@ -83,20 +83,26 @@ a:hover{
 a:visited{
     color: #f3a158;
 }
-@media only screen and (max-width: 400px) { /* Mobile */
+@media only screen and (max-width: 700px) { /* Mobile */
     nav{
         width: 100%;
     }
     .menu > li, .menu > li:last-of-type{
         margin: 0, auto;
     }
+    .page{
+        width: 100%;
+    }
 }
-@media only screen and (min-width:401px) { 
+@media only screen and (min-width:701px) { 
     aside {
         display: inline;
         width: 400px;
     }
     article{
         display: inline;
+    }
+    .page{
+        flex-direction: row;
     }
 }
