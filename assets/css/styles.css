@@ -27,6 +27,7 @@ nav{
 .menu > li{
     color: #f1811d;
     display:inline;
+    margin-top: 0;
     margin-right: 50px;
     text-transform: uppercase;
     
@@ -37,8 +38,6 @@ body{
     background-color:#EEEEEE;
 }
 .page{
-    display:flex;
-    flex-direction: column;
     margin: 0 auto;
     width: 90%;
     min-height: 700px;
@@ -53,11 +52,15 @@ aside{
     width: 30%;
     height: 30%;
 }
-h1{
+h1,h2{
     display: flex; 
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .main-title{
     width: 100%;
@@ -75,6 +78,9 @@ p{
 }
 .presentation{
     text-align: left;
+}
+li{
+    margin-top: 50px;
 }
 a{
     text-decoration: none;
