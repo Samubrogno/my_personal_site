@@ -77,7 +77,8 @@ p{
     display: flex;
 }
 .presentation{
-    text-align: left;
+    text-align: center;
+    align-items: center;
 }
 li{
     margin-top: 50px;
