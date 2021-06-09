@@ -18,6 +18,10 @@ nav{
     align-items: center;
 
 }
+.active{
+    color: #0d1d41;
+    background-color: #f1811d;
+}
 .menu{
     height: 70px;
     display: flex;
