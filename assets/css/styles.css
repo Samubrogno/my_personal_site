@@ -90,9 +90,7 @@ p{
 li{
     margin-top: 30px;
 }
-.point>ul>li{
-    margin-left: 50px;
-}
+
 a{
     color: inherit;
     text-decoration:none;
@@ -114,22 +112,35 @@ a:visited{
     .menu > li:first-of-type{
         margin-left: 50px;
     }
+    article, .point{
+        align-items: center;
+    }
     .school-img{
         width:450px;
         height: 250px;
+    }
+    
+    ul{
+        align-items: center;
+        list-style-type: none;
+    }
+    .point>ul>li{
+        align-items: center;
+        text-align:center;
     }
 }
 @media only screen and (min-width:701px) {  /* PC */
     
    
-    .profile-img,{
+    .profile-img{
         width:245px;
         height:300px;
     }
     article, .point{
         flex-direction: row;
     }
-    .school-img{
+    .point>ul>li{
+        margin-left: 50px;
     }
     
 
