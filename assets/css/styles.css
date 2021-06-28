@@ -44,11 +44,23 @@ body{
     background-color:#EEEEEE;
 }
 .page{
-    margin: 0 auto;
     width: 90%;
     max-width: 900px;
     min-height: 700px;
     border:1px solid red; /* debugging */
+}
+footer{
+    display: flex;
+    background-color: #0d1d41;
+    justify-content: space-around;
+    border: 1px solid yellow;
+}
+.page, footer{
+    margin: 0 auto;
+}
+.footer-img{
+    width:50px;
+    height: 50px;
 }
 aside{
     display: flex;
@@ -102,12 +114,21 @@ a:hover{
 a:visited{
     color: inherit;
 }
+.btn {
+    text-transform: uppercase;
+    border-radius: 28px;
+    color: #f1811d;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #f1811d;
+    color:#0d1d41;
+    text-decoration: none;
+  }
 @media only screen and (max-width: 700px) { /* Mobile */
-    nav{
-        width: 100%;
-    }
-    
-    .page{
+    .page, footer, nav{
         width: 100%;
     }
     .menu > li:first-of-type{
@@ -137,13 +158,14 @@ a:visited{
         width:245px;
         height:300px;
     }
-    article, .point{
+    article, .point, footer{
         flex-direction: row;
     }
     .point>ul>li{
         margin-left: 50px;
         margin-top: 0;
     }
+
     
 
 }
